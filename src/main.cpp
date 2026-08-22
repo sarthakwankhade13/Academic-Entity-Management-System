@@ -33,21 +33,52 @@ void studentMenu(StudentManager& manager) {
             cout << "\nEnter Student ID: ";
             cin >> id;
 
+            if (id <= 0) {
+                cout << "Student ID must be positive." << endl;
+                continue;
+            }
+
             cin.ignore();
 
             cout << "Enter Student Name: ";
             getline(cin, name);
 
+            if (name.empty()) {
+                cout << "Name cannot be empty." << endl;
+                continue;
+            }
+
             cout << "Enter Department: ";
             getline(cin, department);
+
+            if (department.empty()) {
+                cout << "Department cannot be empty." << endl;
+                continue;
+            }
 
             cout << "Enter Email: ";
             getline(cin, email);
 
+            if (email.empty()) {
+                cout << "Email cannot be empty." << endl;
+                continue;
+            }
+
             cout << "Enter CGPA: ";
             cin >> cgpa;
 
-            Student student(id, name, department, email, cgpa);
+            if (cgpa < 0 || cgpa > 10) {
+                cout << "CGPA must be between 0 and 10." << endl;
+                continue;
+            }
+
+            Student student(
+                id,
+                name,
+                department,
+                email,
+                cgpa
+            );
 
             manager.addStudent(student);
         }
