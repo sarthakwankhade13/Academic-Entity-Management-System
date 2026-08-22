@@ -9,6 +9,8 @@ private:
     int count;
     int capacity;
 
+    void increaseCapacity();
+
 public:
     StudentManager();
 

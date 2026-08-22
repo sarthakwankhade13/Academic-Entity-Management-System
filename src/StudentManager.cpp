@@ -10,11 +10,29 @@ StudentManager::StudentManager() {
     students = new Student[capacity];
 }
 
+void StudentManager::increaseCapacity() {
+
+    int newCapacity = capacity * 2;
+
+    Student* newStudents = new Student[newCapacity];
+
+    for (int i = 0; i < count; i++) {
+        newStudents[i] = students[i];
+    }
+
+    delete[] students;
+
+    students = newStudents;
+    capacity = newCapacity;
+
+    cout << "Student storage increased to "
+         << capacity << "." << endl;
+}
+
 void StudentManager::addStudent(Student student) {
 
     if (count == capacity) {
-        cout << "Student storage is full." << endl;
-        return;
+        increaseCapacity();
     }
 
     students[count] = student;
