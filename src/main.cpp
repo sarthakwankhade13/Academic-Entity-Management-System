@@ -1,11 +1,13 @@
 #include <iostream>
-#include "../include/Student.h"
+#include "../include/StudentManager.h"
 
 using namespace std;
 
 int main() {
 
-    Student student(
+    StudentManager manager;
+
+    Student student1(
         101,
         "Rahul",
         "Computer Science",
@@ -13,7 +15,18 @@ int main() {
         8.7
     );
 
-    student.display();
+    Student student2(
+        102,
+        "Amit",
+        "Information Technology",
+        "amit@gmail.com",
+        8.5
+    );
+
+    manager.addStudent(student1);
+    manager.addStudent(student2);
+
+    manager.displayStudents();
 
     return 0;
 }
