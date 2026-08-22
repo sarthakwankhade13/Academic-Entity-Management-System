@@ -1,4 +1,5 @@
 #include <iostream>
+#include "../include/AcademicEntity.h"
 
 using namespace std;
 
@@ -16,37 +17,11 @@ void displayMainMenu() {
 }
 
 int main() {
-    int choice;
 
-    while (true) {
-        displayMainMenu();
-        cin >> choice;
+    AcademicEntity entity(101, "Rahul");
 
-        switch (choice) {
-            case 1:
-                cout << "Student Management selected.\n";
-                break;
-
-            case 2:
-                cout << "Teacher Management selected.\n";
-                break;
-
-            case 3:
-                cout << "Course Management selected.\n";
-                break;
-
-            case 4:
-                cout << "Department Management selected.\n";
-                break;
-
-            case 5:
-                cout << "Exiting application...\n";
-                return 0;
-
-            default:
-                cout << "Invalid choice. Please try again.\n";
-        }
-    }
+    cout << "\nAcademic Entity Details\n";
+    entity.display();
 
     return 0;
 }
