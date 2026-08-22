@@ -1,1 +1,10 @@
 301|Data Structures|Computer Science|4
+302|Database Management|Information Technology|4
+303|Operating Systems|Computer Science|4
+304|Computer Networks|Information Technology|3
+305|Machine Learning|Computer Science|4
+306|Cloud Computing|Information Technology|3
+307|Embedded Systems|Electronics|4
+308|Artificial Intelligence|Computer Science|4
+309|Cyber Security|Information Technology|3
+310|Software Engineering|Computer Science|3

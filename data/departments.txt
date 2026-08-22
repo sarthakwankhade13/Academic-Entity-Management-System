@@ -1,0 +1,10 @@
+401|Computer Science|Dr. Amit Patil
+402|Information Technology|Dr. Sneha Sharma
+403|Electronics|Dr. Neha Kulkarni
+404|Mechanical Engineering|Dr. Raj Joshi
+405|Civil Engineering|Dr. Rahul More
+406|Electrical Engineering|Dr. Pooja Patil
+407|Chemical Engineering|Dr. Kunal Sharma
+408|Artificial Intelligence|Dr. Priya More
+409|Data Science|Dr. Rohan Joshi
+410|Cyber Security|Dr. Akash Deshmukh

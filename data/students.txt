@@ -1,1 +1,10 @@
 101|Rahul Sharma|Computer Science|rahul@gmail.com|8.5
+102|Amit Patil|Information Technology|amit@gmail.com|8.2
+103|Priya Joshi|Computer Science|priya@gmail.com|9.1
+104|Rohan Deshmukh|Electronics|rohan@gmail.com|7.8
+105|Sneha Kulkarni|Computer Science|sneha@gmail.com|8.9
+106|Akash Wankhede|Information Technology|akash@gmail.com|7.5
+107|Neha Sharma|Electronics|neha@gmail.com|8.7
+108|Kunal Patil|Computer Science|kunal@gmail.com|8.1
+109|Pooja Joshi|Information Technology|pooja@gmail.com|9
+110|Vikas More|Computer Science|vikas@gmail.com|7.9

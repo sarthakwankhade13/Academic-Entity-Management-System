@@ -7,6 +7,7 @@
 #include "../include/FileManager.h"
 #include "../include/ReportManager.h"
 
+
 using namespace std;
 
 
@@ -81,34 +82,13 @@ void studentMenu(StudentManager& manager) {
             cout << "Enter Student Name: ";
             getline(cin, name);
 
-            if (name.empty()) {
-
-                cout << "Name cannot be empty." << endl;
-
-                continue;
-            }
-
 
             cout << "Enter Department: ";
             getline(cin, department);
 
-            if (department.empty()) {
-
-                cout << "Department cannot be empty." << endl;
-
-                continue;
-            }
-
 
             cout << "Enter Email: ";
             getline(cin, email);
-
-            if (email.empty()) {
-
-                cout << "Email cannot be empty." << endl;
-
-                continue;
-            }
 
 
             cout << "Enter CGPA: ";
@@ -514,17 +494,17 @@ void courseMenu(CourseManager& manager) {
             }
 
 
-            if (name.empty() || department.empty()) {
+            if (credits <= 0) {
 
-                cout << "Fields cannot be empty." << endl;
+                cout << "Credits must be positive." << endl;
 
                 continue;
             }
 
 
-            if (credits <= 0) {
+            if (name.empty() || department.empty()) {
 
-                cout << "Credits must be positive." << endl;
+                cout << "Fields cannot be empty." << endl;
 
                 continue;
             }
@@ -851,6 +831,7 @@ int main() {
         cout << "5. Reports" << endl;
         cout << "6. Save Data" << endl;
         cout << "7. Exit" << endl;
+       
 
         cout << "\nEnter your choice: ";
 
@@ -866,50 +847,35 @@ int main() {
         }
 
 
-        // ==================================================
         // STUDENT
-        // ==================================================
-
         if (choice == 1) {
 
             studentMenu(studentManager);
         }
 
 
-        // ==================================================
         // TEACHER
-        // ==================================================
-
         else if (choice == 2) {
 
             teacherMenu(teacherManager);
         }
 
 
-        // ==================================================
         // COURSE
-        // ==================================================
-
         else if (choice == 3) {
 
             courseMenu(courseManager);
         }
 
 
-        // ==================================================
         // DEPARTMENT
-        // ==================================================
-
         else if (choice == 4) {
 
             departmentMenu(departmentManager);
         }
 
 
-        // ==================================================
         // REPORTS
-        // ==================================================
-
         else if (choice == 5) {
 
             ReportManager::showSummary(
@@ -955,14 +921,12 @@ int main() {
                 );
             }
 
-
             else if (reportChoice == 2) {
 
                 ReportManager::showTeacherReport(
                     teacherManager
                 );
             }
-
 
             else if (reportChoice == 3) {
 
@@ -971,7 +935,6 @@ int main() {
                 );
             }
 
-
             else if (reportChoice == 4) {
 
                 ReportManager::showDepartmentReport(
@@ -979,12 +942,10 @@ int main() {
                 );
             }
 
-
             else if (reportChoice == 5) {
 
                 continue;
             }
-
 
             else {
 
@@ -993,10 +954,7 @@ int main() {
         }
 
 
-        // ==================================================
         // SAVE DATA
-        // ==================================================
-
         else if (choice == 6) {
 
             FileManager::saveStudents(studentManager);
@@ -1012,10 +970,7 @@ int main() {
         }
 
 
-        // ==================================================
         // EXIT
-        // ==================================================
-
         else if (choice == 7) {
 
             cout << "\nSaving data before exit..." << endl;
@@ -1037,6 +992,7 @@ int main() {
 
             break;
         }
+
 
 
         else {

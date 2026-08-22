@@ -1,1 +1,10 @@
 201|Dr Amit Patil|Computer Science|amit@gmail.com|Data Science
+202|Dr. Sneha Sharma|Information Technology|sneha.sharma@gmail.com|Cloud Computing
+203|Dr. Raj Joshi|Computer Science|raj.joshi@gmail.com|Artificial Intelligence
+204|Dr. Neha Kulkarni|Electronics|neha.k@gmail.com|Embedded Systems
+205|Dr. Rahul More|Computer Science|rahul.more@gmail.com|Machine Learning
+206|Dr. Pooja Patil|Information Technology|pooja.patil@gmail.com|Cyber Security
+207|Dr. Kunal Sharma|Electronics|kunal.sharma@gmail.com|Communication Systems
+208|Dr. Priya More|Computer Science|priya.more@gmail.com|Algorithms
+209|Dr. Rohan Joshi|Information Technology|rohan.joshi@gmail.com|Database Systems
+210|Dr. Akash Deshmukh|Computer Science|akash.d@gmail.com|Software Engineering
