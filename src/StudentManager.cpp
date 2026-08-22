@@ -24,9 +24,29 @@ void StudentManager::increaseCapacity() {
 
     students = newStudents;
     capacity = newCapacity;
+
+    cout << "Student storage increased to "
+         << capacity << "." << endl;
+}
+
+bool StudentManager::studentIdExists(int id) {
+
+    for (int i = 0; i < count; i++) {
+
+        if (students[i].getId() == id) {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 void StudentManager::addStudent(Student student) {
+
+    if (studentIdExists(student.getId())) {
+        cout << "Student ID already exists." << endl;
+        return;
+    }
 
     if (count == capacity) {
         increaseCapacity();
@@ -82,14 +102,35 @@ void StudentManager::updateStudent(int id) {
             cout << "Enter new name: ";
             getline(cin, name);
 
+            if (name.empty()) {
+                cout << "Name cannot be empty." << endl;
+                return;
+            }
+
             cout << "Enter new department: ";
             getline(cin, department);
+
+            if (department.empty()) {
+                cout << "Department cannot be empty." << endl;
+                return;
+            }
 
             cout << "Enter new email: ";
             getline(cin, email);
 
+            if (email.empty()) {
+                cout << "Email cannot be empty." << endl;
+                return;
+            }
+
             cout << "Enter new CGPA: ";
             cin >> cgpa;
+
+            if (cgpa < 0 || cgpa > 10) {
+                cout << "Invalid CGPA. It must be between 0 and 10."
+                     << endl;
+                return;
+            }
 
             students[i].setName(name);
             students[i].setDepartment(department);

@@ -14,6 +14,8 @@ private:
 public:
     StudentManager();
 
+    bool studentIdExists(int id);
+
     void addStudent(Student student);
     void displayStudents();
     void searchStudent(int id);
