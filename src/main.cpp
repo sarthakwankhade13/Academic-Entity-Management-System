@@ -1,27 +1,19 @@
 #include <iostream>
-#include "../include/AcademicEntity.h"
+#include "../include/Student.h"
 
 using namespace std;
 
-void displayMainMenu() {
-    cout << "\n=========================================\n";
-    cout << "    ACADEMIC ENTITY MANAGEMENT SYSTEM\n";
-    cout << "=========================================\n";
-    cout << "1. Student Management\n";
-    cout << "2. Teacher Management\n";
-    cout << "3. Course Management\n";
-    cout << "4. Department Management\n";
-    cout << "5. Exit\n";
-    cout << "=========================================\n";
-    cout << "Enter your choice: ";
-}
-
 int main() {
 
-    AcademicEntity entity(101, "Rahul");
+    Student student(
+        101,
+        "Rahul",
+        "Computer Science",
+        "rahul@gmail.com",
+        8.7
+    );
 
-    cout << "\nAcademic Entity Details\n";
-    entity.display();
+    student.display();
 
     return 0;
 }
