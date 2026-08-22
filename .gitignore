@@ -1,0 +1,5 @@
+academic_system
+academic_system.exe
+*.o
+.vscode/
+.idea/

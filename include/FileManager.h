@@ -9,7 +9,9 @@
 using namespace std;
 
 class FileManager {
+
 public:
+
     static void saveStudents(StudentManager& manager);
     static void loadStudents(StudentManager& manager);
 
