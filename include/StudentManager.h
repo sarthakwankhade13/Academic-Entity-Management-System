@@ -16,6 +16,9 @@ public:
 
     void addStudent(Student student);
     void displayStudents();
+    void searchStudent(int id);
+    void updateStudent(int id);
+    void deleteStudent(int id);
 
     ~StudentManager();
 };
