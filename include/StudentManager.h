@@ -22,6 +22,9 @@ public:
     void updateStudent(int id);
     void deleteStudent(int id);
 
+    int getCount();
+    Student getStudent(int index);
+
     ~StudentManager();
 };
 

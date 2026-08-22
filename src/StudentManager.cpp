@@ -9,6 +9,13 @@ StudentManager::StudentManager() {
 
     students = new Student[capacity];
 }
+int StudentManager::getCount() {
+    return count;
+}
+
+Student StudentManager::getStudent(int index) {
+    return students[index];
+}
 
 void StudentManager::increaseCapacity() {
 
