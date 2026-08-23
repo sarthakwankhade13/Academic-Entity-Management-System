@@ -451,3 +451,30 @@ Input Validation
 Report Generation
        ↓
 Git & GitHub
+---
+
+## 👨‍💻 Designed & Developed By
+
+### **Sarthak Wankhade**
+
+**Computer Science Engineering Student**  
+**Vishwakarma Institute of Technology (VIT), Pune**
+
+> Designed and developed with C++ to demonstrate practical implementation of Object-Oriented Programming, Dynamic Memory Allocation, File Handling, CRUD Operations, and Modular Software Design.
+
+---
+
+<p align="center">
+
+### ⭐ Academic Entity Management System
+
+**Developed by Sarthak Wankhade**  
+**Vishwakarma Institute of Technology Pune**
+
+</p>
+
+<p align="center">
+Made with ❤️ using C++
+</p>
+
+---
